@@ -1,0 +1,519 @@
+/*Paleta de color y tipografia*/
+
+ :root {
+    --color-primario: #658f3d;
+    --color-secundario: #b46327;
+    --color-claro1: #EDDBCD;
+    --color-claro2: #CDCDCD;
+    --color-oscuro1: #000000;
+    --color-oscuro2: #383735;
+    --tipo-primario: 'Montserrat', sans-serif;
+    --tipo-secundario: 'Open Sans', sans-serif;
+}
+
+
+/*GLOBALES*/
+
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+#botonArriba {
+    color: var(--color-primario);
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    font-size: 30px;
+    transform: scale(0);
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+.contenedor {
+    max-width: 1200px;
+    margin: 0 auto;
+    max-width: 95%;
+}
+
+.mt-s {
+    margin-top: 50px;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2.8rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+h4 {
+    font-size: 1.8rem;
+}
+
+h3 {
+    font-style: 1.7rem;
+}
+
+p {
+    font-weight: 400;
+    font-size: 2rem;
+    letter-spacing: .03rem;
+    line-height: 3.5rem;
+    color: grey;
+}
+
+li {
+    font-size: 1.8rem;
+}
+
+img {
+    max-width: 100%;
+}
+
+.btn {
+    padding: 15px;
+    background-color: var(--color-secundario);
+    border-radius: 5px;
+    box-shadow: 5px 5px 15px 4px rgba(128, 128, 128, 0.267);
+}
+
+.img-sombra {
+    box-shadow: 5px 5px 15px 4px rgba(128, 128, 128, 0.267);
+}
+
+header {
+    background-image: url(/img/header.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-bottom-right-radius: 0px;
+    min-height: 100vh;
+    border-width: 0px;
+    position: relative;
+    background-attachment: fixed;
+}
+
+header::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    position: absolute;
+    opacity: 0.5;
+}
+
+.logo {
+    width: 50px;
+}
+
+.boton-hamburguesa {
+    background-color: transparent;
+    color: var(--color-primario);
+    border: none;
+    font-size: 25px;
+}
+
+.titulos {
+    position: relative;
+}
+
+.titulo-principal {
+    color: white;
+    padding-top: 150px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.titulo-principal h2 {
+    color: white;
+    font-weight: 200;
+}
+
+.barra-nav {
+    background-color: #658f3d23;
+    position: relative;
+    padding: 0px;
+}
+
+.menu-desktop {
+    display: none;
+}
+
+
+/***Lista movil****/
+
+.ham {
+    font-size: 2.5rem;
+    color: var(--color-primario);
+    cursor: pointer;
+}
+
+.barra-navegacion {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    align-items: center;
+}
+
+
+/**listanavegacion**/
+
+.lista-navegacion {
+    background-color: var(--color-primario);
+    width: 100%;
+    position: absolute;
+    height: 0px;
+    opacity: 0;
+    transition: all 0.3s;
+    z-index: 100;
+}
+
+.crece .menu {
+    height: 100vh;
+    opacity: 1;
+}
+
+.lista-navegacion li {
+    list-style: none;
+    text-align: center;
+    padding: 20px;
+}
+
+.lista-navegacion li a {
+    text-decoration: none;
+    color: white;
+}
+
+.lista-navegacion ul {
+    padding-left: 0px;
+}
+
+
+/***FIN lista movil****/
+
+.titulo-principal {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-name: titulo-principal;
+    animation-name: titulo-principal;
+    padding-top: 150px;
+}
+
+@-webkit-keyframes titulo-principal {
+    from {
+        opacity: 0;
+        transform: translate3d(-100%, 0, 0);
+    }
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+@keyframes titulo-principal {
+    from {
+        opacity: 0;
+        transform: translate3d(-100%, 0, 0);
+    }
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+
+/*****respira*****/
+
+.respira {
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.separador-icono1 {
+    width: 80px;
+    display: block;
+    margin: 0 auto;
+}
+
+.respira-titulo {
+    padding-top: 20px;
+    color: var(--color-primario);
+}
+
+.respira p {
+    font-size: 2.5rem;
+}
+
+.separador {
+    margin: 50px;
+}
+
+
+/**En ti***/
+
+.img-enti {
+    width: 200px;
+    display: block;
+    margin: 0 auto;
+}
+
+.enti-habita {
+    text-align: center;
+}
+
+.enti-habita strong {
+    color: var(--color-secundario);
+}
+
+.enti {
+    background-image: url();
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.enti-contenido .como-acceder {
+    color: var(--color-secundario);
+}
+
+.enti-contenido ul li {
+    font-size: 2rem;
+    color: var(--color-primario);
+}
+
+
+/**Bienvenida**/
+
+.seccion-bienvenida {
+    background-color: rgba(0, 128, 0, 0.061);
+    position: relative;
+    padding: 50px 0px 50px 10px;
+}
+
+
+/**Aprende**/
+
+.aprende-titulo h2 {
+    color: white;
+    z-index: 1;
+    position: relative;
+    padding-top: 90px;
+}
+
+.aprende-header {
+    background-image: url(/img/esperanza-min.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 350px;
+    position: relative;
+}
+
+.aprende-header::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: .5;
+    position: absolute;
+}
+
+
+/**MI HISTORIA***/
+
+.mi-historia h2 {
+    padding-top: 50px;
+    color: var(--color-primario);
+}
+
+.mi-historia-boton {
+    color: white;
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+
+/**SERVICIOS***/
+
+main {
+    margin-top: 50px;
+}
+
+.titulo-servicios {
+    color: var(--color-secundario);
+}
+
+.servicios-contenido {
+    text-align: center;
+}
+
+.servicos-icono {
+    width: 100px;
+}
+
+.contenedor-servicios {
+    padding: 20px;
+}
+
+.contenedor-servicios h1 {
+    text-align: center;
+    color: var(--color-secundario);
+}
+
+.servicios p {
+    text-align: center;
+}
+
+.titulares-servicios {
+    color: var(--color-primario);
+}
+
+.servicios-boton {
+    color: white;
+    text-decoration: none;
+    font-size: 2rem;
+    display: inline-block;
+}
+
+.footer {
+    background-color: var(--color-oscuro2);
+}
+
+.contenido-footer {
+    padding: 20px 5px;
+    font-size: 16px;
+    color: var(--color-claro1);
+}
+
+.contenido-footer div {
+    margin: 10px;
+}
+
+
+/**FIN de  SERVICIOS***/
+
+
+/*****************************************/
+
+
+/*mediaquery para pantalla de lap generica*/
+
+
+/*mediaquery para pantalla de lap generica*/
+
+
+/*mediaquery para pantalla de lap generica*/
+
+
+/*mediaquery para pantalla de lap generica*/
+
+
+/*mediaquery para pantalla de lap generica*/
+
+
+/*mediaquery para pantalla de lap generica*/
+
+
+/*mediaquery para pantalla de lap generica*/
+
+
+/*****************************************/
+
+@media (min-width: 768px) {
+    .contenedor {
+        max-width: 1200px;
+        margin: 0 auto;
+        width: 90%;
+    }
+    h1 {
+        font-size: 3.8rem;
+    }
+    h2 {
+        font-size: 3.4rem;
+    }
+    h3 {
+        font-size: 3rem;
+    }
+    h4 {
+        font-size: 2.6rem;
+    }
+    .boton-hamburguesa {
+        display: none;
+    }
+    p {
+        font-size: 3rem;
+    }
+    /******/
+    .ham {
+        display: none;
+    }
+    .barra-nav {
+        padding: 15px;
+    }
+    .lista-navegacion {
+        display: none;
+    }
+    .menu-desktop {
+        display: inline-block;
+    }
+    .menu-desktop a {
+        color: white;
+        text-decoration: none;
+        margin: 10px;
+        font-size: 1.6rem;
+    }
+    .menu-desktop a:hover {
+        color: var(--color-primario);
+    }
+    .boton-hamburguesa {
+        display: none;
+    }
+    /****/
+    .titulo-principal {
+        padding-top: 150px;
+        position: relative;
+        padding-left: 100px;
+    }
+    .titulo-principal h2 {
+        color: white;
+        font-weight: 200;
+    }
+    /**en ti**/
+    .enti-grid {
+        display: grid;
+        grid-template-columns: 20% 80%;
+        column-gap: 2rem;
+    }
+    .enti-contenido ul li {
+        font-size: 2.5rem;
+    }
+    /***SERVICIOS****/
+    .servicios {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2rem;
+    }
+    /*FIN _____mediaquery para pantalla de lap generica*/
+    /**Mediaqueri para pantalla monitor grande****/
+    @media (min-width: 1024px) {
+        p {
+            font-size: 3rem;
+            letter-spacing: .03rem;
+            line-height: 4rem;
+        }
+    }
+}
