@@ -4,6 +4,8 @@ ham.addEventListener('click', function() {
     menu_wrapper.classList.toggle('crece');
 });
 
+//flecha subir
+
 document.getElementById("botonArriba").addEventListener("click", irArriba);
 
 function irArriba() {
@@ -13,7 +15,7 @@ function irArriba() {
         window.scrollTo(0, 0);
     }
 }
-//boton flecha para subir
+
 botonArriba = document.getElementById('botonArriba');
 window.onscroll = function() {
 
@@ -22,7 +24,7 @@ window.onscroll = function() {
         botonArriba.style.transform = "scale(1)";
 
     } else if (scroll < 200) {
-        botonArriba.style.transform = "scale(0)";;
+        botonArriba.style.transform = "scale(0)";
     }
 
 };
