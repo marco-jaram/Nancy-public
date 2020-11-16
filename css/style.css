@@ -469,10 +469,6 @@ main {
     .boton-hamburguesa {
         display: none;
     }
-    p {
-        font-size: 3rem;
-        line-height: 5rem;
-    }
     /******/
     .ham {
         display: none;
@@ -516,6 +512,9 @@ main {
         column-gap: 2rem;
     }
     .enti-contenido ul li {
+        font-size: 2.5rem;
+    }
+    .bienvenida-parrafos {
         font-size: 2.5rem;
     }
     /***SERVICIOS****/
