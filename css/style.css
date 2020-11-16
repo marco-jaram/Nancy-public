@@ -1,7 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400&family=Open+Sans:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300&display=swap');
 
-/**font-family: 'Kalam', cursive;
-font-family: 'Open Sans', sans-serif;**/
+/*********
+font-family: 'Abhaya Libre', serif;
+font-family: 'Roboto', sans-serif;
+*****/
 
 
 /*Paleta de color y tipografia*/
@@ -13,8 +15,8 @@ font-family: 'Open Sans', sans-serif;**/
     --color-claro2: #CDCDCD;
     --color-oscuro1: #000000;
     --color-oscuro2: #383735;
-    --tipo-primario: 'Kalam', cursive;
-    --tipo-secundario: 'Open Sans', sans-serif;
+    --tipo-primario: 'Abhaya Libre', serif;
+    --tipo-secundario: 'Roboto', sans-serif;
 }
 
 
@@ -75,10 +77,9 @@ h3 {
 }
 
 p {
-    font-weight: 400;
     font-size: 2rem;
     letter-spacing: .03rem;
-    line-height: 3.5rem;
+    line-height: 3.8rem;
     color: grey;
     font-family: var(--tipo-secundario);
 }
@@ -365,7 +366,7 @@ main {
 }
 
 .servicios-contenido p {
-    font-weight: 100;
+    font-weight: 300;
     font-size: 2.5rem;
 }
 
@@ -446,9 +447,6 @@ main {
 
 /*mediaquery para pantalla de lap generica*/
 
-
-/*****************************************/
-
 @media (min-width: 768px) {
     .contenedor {
         max-width: 1200px;
@@ -472,6 +470,7 @@ main {
     }
     p {
         font-size: 3rem;
+        line-height: 5rem;
     }
     /******/
     .ham {
