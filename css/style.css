@@ -124,7 +124,7 @@ header::before {
 }
 
 .logo {
-    width: 50px;
+    width: 80px;
 }
 
 .boton-hamburguesa {
@@ -147,7 +147,6 @@ header::before {
 .barra-nav {
     background-color: #658f3d23;
     position: relative;
-    padding: 0px;
 }
 
 .menu-desktop {
@@ -407,6 +406,14 @@ main {
     display: inline-block;
 }
 
+
+/**Contacto***/
+
+.contacto-grid {
+    background-color: var(--color-claro2);
+    padding: 20px;
+}
+
 .footer {
     background-color: var(--color-oscuro2);
 }
@@ -414,7 +421,7 @@ main {
 .contenido-footer {
     padding: 20px 5px;
     font-size: 16px;
-    color: var(--color-claro1);
+    color: white;
 }
 
 .contenido-footer div {
@@ -474,7 +481,7 @@ main {
         display: none;
     }
     .barra-nav {
-        padding: 15px;
+        padding: 0px;
     }
     .lista-navegacion {
         display: none;
@@ -519,6 +526,13 @@ main {
     }
     /***SERVICIOS****/
     .servicios {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        -moz-column-gap: 2rem;
+        column-gap: 2rem;
+    }
+    /**Contacto**/
+    .contacto-grid {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         -moz-column-gap: 2rem;
