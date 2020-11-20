@@ -558,6 +558,9 @@ form textarea {
         -moz-column-gap: 2rem;
         column-gap: 2rem;
     }
+    form {
+        margin-top: 90px;
+    }
 }
 
 
