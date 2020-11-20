@@ -158,7 +158,7 @@ header::before {
 
 .ham {
     font-size: 2.5rem;
-    color: var(--color-primario);
+    color: var(--color-secundario);
     cursor: pointer;
 }
 
@@ -410,8 +410,28 @@ main {
 /**Contacto***/
 
 .contacto-grid {
-    background-color: var(--color-claro2);
+    background-color: rgba(0, 128, 0, 0.061);
     padding: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form input {
+    margin: 5px;
+    height: 50px;
+    font-size: 2rem;
+}
+
+#submit {
+    color: var(--color-secundario);
+}
+
+form textarea {
+    margin: 5px;
+    font-size: 2rem;
 }
 
 .footer {
