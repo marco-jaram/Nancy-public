@@ -83,6 +83,9 @@ p {
     color: grey;
     font-family: var(--tipo-secundario);
 }
+.corazon-icono{
+    color: var(--color-secundario);
+}
 
 li {
     font-size: 1.8rem;
