@@ -94,16 +94,15 @@ img {
 
 .btn {
     padding: 15px;
-    background-color: var(--color-secundario);
-    border-radius: 5px;
-    box-shadow: 5px 5px 15px 4px rgba(128, 128, 128, 0.267);
+   border: 1px  #b46327 solid;
+   border-radius: 5px;
 }
 
 .img-sombra {
     box-shadow: 5px 5px 15px 4px rgba(128, 128, 128, 0.267);
 }
 
-header {
+.header-home {
     background-image: url(/img/header.png);
     background-position: center;
     background-attachment: scroll;
@@ -114,7 +113,7 @@ header {
     position: relative;
 }
 
-header::before {
+.header-home::before {
     content: "";
     width: 100%;
     height: 100%;
@@ -122,6 +121,47 @@ header::before {
     position: absolute;
     opacity: 0.5;
 }
+/***header servicios**/
+.header-servicios {
+    background-image: url(/img/contempla-min.png);
+    background-position: center;
+    background-attachment: scroll;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 80vh;
+    border-width: 0px;
+    position: relative;
+}
+
+.header-servicios::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    position: absolute;
+    opacity: 0.5;
+}
+/**header acerca de**/
+.header-acercade {
+    background-image: url(/img/medita-sentada-min.png);
+    background-position: center;
+    background-attachment: scroll;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    border-width: 0px;
+    position: relative;
+}
+
+.header-acercade::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    position: absolute;
+    opacity: 0.5;
+}
+
 
 .logo {
     width: 80px;
@@ -137,8 +177,13 @@ header::before {
 .titulos {
     position: relative;
 }
+.titulo-principal{
+    color: white;
+    padding-top: 150px;
+    font-family: var(--tipo-primario);
+}
 
-.titulo-principal {
+.titulo-principal-home {
     color: white;
     padding-top: 150px;
     font-family: var(--tipo-primario);
@@ -146,6 +191,10 @@ header::before {
 
 .barra-nav {
     background-color: #658f3d23;
+    position: relative;
+}
+.barra-nav-servicios {
+    background-color: #1e201c6c;
     position: relative;
 }
 
@@ -205,7 +254,7 @@ header::before {
 
 /***FIN lista movil****/
 
-.titulo-principal {
+.titulo-principal-home {
     -webkit-animation-duration: 1s;
     animation-duration: 1s;
     -webkit-animation-name: titulo-principal;
@@ -292,7 +341,9 @@ header::before {
     font-size: 2rem;
     color: var(--color-primario);
 }
-
+.enti-contenido ul  li{
+list-style: none;
+}
 
 /**Bienvenida**/
 
@@ -313,7 +364,7 @@ header::before {
 }
 
 .aprende-header {
-    background-image: url(/img/esperanza-min.png);
+    background-image: url(/img/namacy-sonrie-min.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -342,7 +393,7 @@ header::before {
 }
 
 .mi-historia-boton {
-    color: white;
+    color: var(--color-secundario);
     text-decoration: none;
     font-size: 2rem;
 }
@@ -400,7 +451,7 @@ main {
 }
 
 .servicios-boton {
-    color: white;
+    color: var(--color-secundario);
     text-decoration: none;
     font-size: 2rem;
     display: inline-block;
