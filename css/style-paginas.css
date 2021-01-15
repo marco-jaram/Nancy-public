@@ -1,4 +1,7 @@
 
+.corazon-icono{
+    color: #b46327;
+}
 p{
     font-size: 2.2rem;
 }
@@ -30,7 +33,7 @@ p{
 }
 .division{
     border: 0;
-    width: 1600px;
+    width: 80%;
     height: 10px;
     margin-top: 80px;
     background-color: #658f3d5e;
