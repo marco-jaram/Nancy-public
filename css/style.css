@@ -1,14 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300&display=swap');
-
 /*********
 font-family: 'Abhaya Libre', serif;
 font-family: 'Roboto', sans-serif;
 *****/
 
-
 /*Paleta de color y tipografia*/
 
- :root {
+:root {
     --color-primario: #658f3d;
     --color-secundario: #b46327;
     --color-claro1: #EDDBCD;
@@ -19,12 +17,12 @@ font-family: 'Roboto', sans-serif;
     --tipo-secundario: 'Roboto', sans-serif;
 }
 
-
 /*GLOBALES*/
 
 html {
     box-sizing: border-box;
     scroll-behavior: smooth;
+    font-size: 62.5%;
 }
 
 #botonArriba {
@@ -36,9 +34,7 @@ html {
     transform: scale(0);
 }
 
-*,
-*:before,
-*:after {
+*, *:before, *:after {
     box-sizing: inherit;
 }
 
@@ -50,10 +46,6 @@ html {
 
 .mt-s {
     margin-top: 50px;
-}
-
-html {
-    font-size: 62.5%;
 }
 
 h1 {
@@ -76,6 +68,10 @@ h3 {
     font-style: 1.7rem;
 }
 
+a {
+    text-decoration: none;
+}
+
 p {
     font-size: 2rem;
     letter-spacing: .03rem;
@@ -83,7 +79,8 @@ p {
     color: grey;
     font-family: var(--tipo-secundario);
 }
-.corazon-icono{
+
+.corazon-icono {
     color: #b46327;
 }
 
@@ -97,8 +94,8 @@ img {
 
 .btn {
     padding: 15px;
-   border: 1px  #b46327 solid;
-   border-radius: 5px;
+    border: 1px #b46327 solid;
+    border-radius: 5px;
 }
 
 .img-sombra {
@@ -106,7 +103,7 @@ img {
 }
 
 .header-home {
-    background-image: url(/img/header.png);
+    background-image: url(/img/header-movil.png);
     background-position: center;
     background-attachment: scroll;
     background-size: cover;
@@ -124,7 +121,9 @@ img {
     position: absolute;
     opacity: 0.5;
 }
+
 /***header servicios**/
+
 .header-servicios {
     background-image: url(/img/contempla-min.png);
     background-position: center;
@@ -144,7 +143,9 @@ img {
     position: absolute;
     opacity: 0.5;
 }
+
 /**header acerca de**/
+
 .header-acercade {
     background-image: url(/img/medita-sentada-min.png);
     background-position: center;
@@ -165,7 +166,6 @@ img {
     opacity: 0.5;
 }
 
-
 .logo {
     width: 80px;
 }
@@ -180,7 +180,8 @@ img {
 .titulos {
     position: relative;
 }
-.titulo-principal{
+
+.titulo-principal {
     color: white;
     padding-top: 150px;
     font-family: var(--tipo-primario);
@@ -196,6 +197,7 @@ img {
     background-color: #658f3d23;
     position: relative;
 }
+
 .barra-nav-servicios {
     background-color: #1e201c6c;
     position: relative;
@@ -204,7 +206,6 @@ img {
 .menu-desktop {
     display: none;
 }
-
 
 /***Lista movil****/
 
@@ -220,7 +221,6 @@ img {
     margin: 0 auto;
     align-items: center;
 }
-
 
 /**listanavegacion**/
 
@@ -254,7 +254,6 @@ img {
     padding-left: 0px;
 }
 
-
 /***FIN lista movil****/
 
 .titulo-principal-home {
@@ -287,7 +286,6 @@ img {
     }
 }
 
-
 /*****respira*****/
 
 .respira {
@@ -305,13 +303,11 @@ img {
     padding-top: 20px;
     color: var(--color-primario);
     font-family: var(--tipo-primario);
-    font-size: 4rem;
 }
 
 .separador {
     margin: 50px;
 }
-
 
 /**En ti***/
 
@@ -319,10 +315,6 @@ img {
     width: 200px;
     display: block;
     margin: 0 auto;
-}
-
-.enti-habita {
-    text-align: center;
 }
 
 .enti-habita strong {
@@ -344,8 +336,9 @@ img {
     font-size: 2rem;
     color: var(--color-primario);
 }
-.enti-contenido ul  li{
-list-style: none;
+
+.enti-contenido ul li {
+    list-style: none;
 }
 
 /**Bienvenida**/
@@ -355,7 +348,6 @@ list-style: none;
     position: relative;
     padding: 50px 0px 50px 10px;
 }
-
 
 /**Aprende**/
 
@@ -385,7 +377,6 @@ list-style: none;
     position: absolute;
 }
 
-
 /**MI HISTORIA***/
 
 .mi-historia h2 {
@@ -401,11 +392,23 @@ list-style: none;
     font-size: 2rem;
 }
 
-
 /**SERVICIOS***/
 
-main {
-    margin-top: 50px;
+.seccion-servicios-pagina-lista {
+    margin-top: 30px;
+}
+
+.boton-agenda-tu-cita {
+    text-align: center;
+    padding: 15px;
+    border: 1px#658f3d;
+    border-radius: 5px;
+    font-size: 1.7rem;
+    background-color: #658f3d;
+    color: white;
+    -webkit-box-shadow: 3px 3px 20px 0px #b464276b;
+    -moz-box-shadow: 3px 3px 20px 0px #b464276b;
+    box-shadow: 3px 3px 20px 0px #b464276b;
 }
 
 .titulo-servicios {
@@ -460,12 +463,76 @@ main {
     display: inline-block;
 }
 
+.video-servicios {
+    width: 350px;
+    margin: 0 auto;
+}
 
-/**Contacto***/
+.video-container {
+    display: flex;
+}
+.cuerpo-templo h3{
+font-size: 2.5rem;
+}
+.tu-primera-cita h3{
+    color: var(--color-secundario);
+}
 
-.contacto-grid {
-    background-color: rgba(0, 128, 0, 0.061);
-    padding: 20px;
+/**pagina Contacto**/
+
+.servicio-iconocontacto .servicos-icono {
+    display: block;
+    margin: 0 auto;
+}
+
+.contacto-main {
+    background-color: white;
+    padding: 10px;
+}
+
+.contenedor-botones-contacto {
+    display: flex;
+    flex-direction: column;
+}
+
+.contacto-main h2 {
+    text-align: center;
+}
+
+.contacto-main .contactame-subtitulo {
+    text-align: center;
+}
+
+.contenedor-botones-contacto {
+    margin-bottom: 30px;
+}
+
+.boton-contacto-correo {
+    text-align: center;
+    display: inline-block;
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px #49974fb2;
+    border-radius: 5px;
+    font-size: 1.7rem;
+    background-color: grey;
+    color: white;
+    -webkit-box-shadow: 3px 3px 20px 0px grey;
+    -moz-box-shadow: 3px 3px 20px 0px grey;
+    box-shadow: 3px 3px 20px 0px rgba(128, 128, 128, 0.466);
+}
+
+.boton-contacto-whatsapp {
+    text-align: center;
+    padding: 15px;
+    border: 1px #49974fb2;
+    border-radius: 5px;
+    font-size: 1.7rem;
+    background-color: green;
+    color: white;
+    -webkit-box-shadow: 3px 3px 20px 0px #49974f7a;
+    -moz-box-shadow: 3px 3px 20px 0px #49974f7a;
+    box-shadow: 3px 3px 20px 0px #5d92627a;
 }
 
 form {
@@ -502,30 +569,21 @@ form textarea {
     margin: 10px;
 }
 
-
 /**FIN de  SERVICIOS***/
-
 
 /*****************************************/
 
+/*mediaquery para pantalla de lap generica*/
 
 /*mediaquery para pantalla de lap generica*/
 
+/*mediaquery para pantalla de lap generica*/
 
 /*mediaquery para pantalla de lap generica*/
 
-
 /*mediaquery para pantalla de lap generica*/
 
-
 /*mediaquery para pantalla de lap generica*/
-
-
-/*mediaquery para pantalla de lap generica*/
-
-
-/*mediaquery para pantalla de lap generica*/
-
 
 /*mediaquery para pantalla de lap generica*/
 
@@ -546,6 +604,9 @@ form textarea {
     }
     h4 {
         font-size: 2.6rem;
+    }
+    .header-home {
+        background-image: url(/img/header.png);
     }
     .boton-hamburguesa {
         display: none;
@@ -605,21 +666,55 @@ form textarea {
         -moz-column-gap: 2rem;
         column-gap: 2rem;
     }
+    .con-incineso {
+        margin-top: 150px;
+    }
+    .video-servicios {
+        width: 800px;
+        margin: 0 auto;
+    }
+    .video-servicios {
+        width: 750px;
+    }
+    .video-container {
+        display: flex;
+    }
+    .grid-servicios-lista {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        -moz-column-gap: 2rem;
+        column-gap: 5rem;
+    }
+    .tu-primera-cita-contenido {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        -moz-column-gap: 2rem;
+        column-gap: 5rem;
+        align-items: center;
+    }
+    .grid-contenedor-servicios-pagina{
+
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        -moz-column-gap: 2rem;
+        column-gap: 5rem;
+        align-items: center;
+        
+    }
     /**Contacto**/
     .contacto-grid {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         -moz-column-gap: 2rem;
         column-gap: 2rem;
+        margin-bottom: 100px;
     }
     form {
         margin-top: 90px;
     }
 }
 
-
 /*FIN _____mediaquery para pantalla de lap generica*/
-
 
 /**Mediaqueri para pantalla monitor grande****/
 
