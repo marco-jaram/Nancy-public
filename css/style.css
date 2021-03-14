@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300&display=swap');
+
 /*********
 font-family: 'Abhaya Libre', serif;
 font-family: 'Roboto', sans-serif;
@@ -568,7 +568,38 @@ form textarea {
 .contenido-footer div {
     margin: 10px;
 }
+/* testimonios */
+.testimonios{
+background-color: rgb(230, 224, 224);
+padding: 50px 0px;
+}
+.contenido-testimonios{
 
+}
+.testimonio-card{
+    text-align: center;
+    margin-bottom: 50px;
+
+}
+.imagen-testimonios img{
+width: 200px;
+border-radius: 50%;
+}
+.imagen-testimonios h5{
+    font-size: 1.7rem;
+
+}
+.texto-testimonio p{
+color: rgb(93, 93, 93);
+font-size: 2rem;
+text-align: left;
+
+}
+.texto-testimonio p::first-letter{
+
+        font-size: 4rem;
+
+}
 /**FIN de  SERVICIOS***/
 
 /*****************************************/
@@ -679,7 +710,29 @@ form textarea {
     .video-container {
         display: flex;
     }
-    .grid-servicios-lista {
+    .testimonio-card{
+        display: grid;
+        grid-template-columns: repeat(2, 30% 70% );
+        -moz-column-gap: 2rem;
+        column-gap: 2rem;
+    
+    }
+   
+    form {
+        margin-top: 90px;
+    }
+}
+
+/*FIN _____mediaquery para pantalla de lap generica*/
+
+/**Mediaqueri para pantalla monitor grande****/
+
+@media (min-width: 1024px) {
+    p {
+        font-size: 3rem;
+        letter-spacing: .03rem;
+        line-height: 4rem;
+    } .grid-servicios-lista {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         -moz-column-gap: 2rem;
@@ -708,20 +761,5 @@ form textarea {
         -moz-column-gap: 2rem;
         column-gap: 2rem;
         margin-bottom: 100px;
-    }
-    form {
-        margin-top: 90px;
-    }
-}
-
-/*FIN _____mediaquery para pantalla de lap generica*/
-
-/**Mediaqueri para pantalla monitor grande****/
-
-@media (min-width: 1024px) {
-    p {
-        font-size: 3rem;
-        letter-spacing: .03rem;
-        line-height: 4rem;
     }
 }
