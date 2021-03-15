@@ -408,9 +408,9 @@ img {
     font-size: 1.7rem;
     background-color: #658f3d;
     color: white;
-    -webkit-box-shadow: 3px 3px 20px 0px #b464276b;
-    -moz-box-shadow: 3px 3px 20px 0px #b464276b;
-    box-shadow: 3px 3px 20px 0px #b464276b;
+    -webkit-box-shadow: 3px 3px 20px 0px #66636283;
+    -moz-box-shadow: 3px 3px 20px 0px #66636283;
+    box-shadow: 3px 3px 20px 0px #66636283;
 }
 
 .titulo-servicios {
@@ -536,7 +536,9 @@ font-size: 2.5rem;
     -moz-box-shadow: 3px 3px 20px 0px #49974f7a;
     box-shadow: 3px 3px 20px 0px #5d92627a;
 }
-
+.servicios-contacto{
+    padding-top: 30px;
+}
 form {
     display: flex;
     flex-direction: column;
@@ -602,6 +604,55 @@ text-align: left;
         font-size: 4rem;
 
 }
+/* PAGINAS */
+
+.corazon-icono{
+    color: #b46327;
+}
+
+.servicos-pagina-icono{
+    width: 200px;
+}
+.contenedor-servicios-pagina{
+    text-align: center;
+}
+.seccion-servicios-pagina-lista{
+    background-color: rgba(0, 128, 0, 0.061);
+    padding: 20px;
+}
+.lista-ul-pagina li{
+    list-style: none;
+    color: grey;
+    line-height: 3rem;
+}
+.cuerpo-templo{
+    background-color: #b46427d3;
+
+  
+}
+.cuerpo-templo h3{
+    color: white;
+    padding-top: 50px ;
+    padding-bottom: 50px;
+    
+}
+.division{
+    border: 0;
+    width: 80%;
+    height: 3px;
+    margin-top: 80px;
+    background-color: #658f3d5e;
+}
+.acompanamiento{
+    margin-top: 100px;
+}
+.tu-primera-cita{
+    margin-top: 80px;
+}
+.seccion-servicios-pagina-lista.es-para-mi {
+    background-color: rgba(11, 128, 0, 0.192);
+}
+
 /**FIN de  SERVICIOS***/
 
 /*****************************************/
@@ -717,7 +768,12 @@ text-align: left;
         column-gap: 2rem;
     
     }
-   
+    .servicios-contacto{
+        padding-top: 30px;
+    }
+    .acompanamiento{
+        margin-top: 150px;
+    }
     form {
         margin-top: 90px;
     }
@@ -729,7 +785,7 @@ text-align: left;
 
 @media (min-width: 1024px) {
     p {
-        font-size: 3rem;
+        font-size: 2.5rem;
         letter-spacing: .03rem;
         line-height: 4rem;
     } .grid-servicios-lista {
@@ -754,6 +810,10 @@ text-align: left;
         align-items: center;
         
     }
+    /* .servicios-contacto{
+        margin-top: 90px;
+    } */
+   
     /**Contacto**/
     .contacto-grid {
         display: grid;
