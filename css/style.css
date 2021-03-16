@@ -300,7 +300,7 @@ img {
 
 .respira-titulo {
     padding-top: 20px;
-    color: var(--color-secundario);
+    color: var(--color-primario);
     font-family: var(--tipo-primario);
 }
 
@@ -328,7 +328,7 @@ img {
 }
 
 .enti-contenido .como-acceder {
-    color: var(--color-secundario);
+    color: var(--color-primario);
 }
 
 .enti-contenido ul li {
@@ -385,6 +385,7 @@ img {
 .blog h2{
     color: var(--color-secundario);
     font-size: 4rem;
+    font-weight: 300;
 }
 
 /**MI HISTORIA***/
@@ -394,6 +395,7 @@ img {
     color: var(--color-secundario);
     font-family: var(--tipo-primario);
     font-size: 4rem;
+    font-weight: 300;
 }
 
 .mi-historia-boton {
@@ -422,7 +424,7 @@ img {
 }
 
 .titulo-servicios {
-    color: var(--color-secundario);
+    color: var(--color-primario);
     font-family: var(--tipo-primario);
     font-size: 4rem;
 }
@@ -474,7 +476,7 @@ img {
 }
 
 .video-servicios {
-    width: 320px;
+    width: 300px;
     margin: 0 auto;
 }
 
@@ -602,8 +604,8 @@ form textarea {
     border-radius: 50%;
 }
 
-.imagen-testimonios h5 {
-    font-size: 1.7rem;
+.imagen-testimonios h3 {
+    font-size: 2.3rem;
 }
 
 .texto-testimonio p {
@@ -616,12 +618,14 @@ form textarea {
     font-size: 4rem;
 }
 .contacto-grid h2{
-    color: var(--color-oscuro2);
+    color: var(--color-primario);
+    font-weight: 300;
 }
 
 /* PAGINAS */
 .main-site-acerca-de h3{
-    color: var(--color-secundario);
+    color: var(--color-primario);
+    font-size: 3rem;
 }
 .corazon-icono {
     color: #b46327;
@@ -672,7 +676,7 @@ form textarea {
 .tu-primera-cita {
     margin-top: 80px;
 }
-.tu-primera-cita h3{
+.tu-primera-cita h2{
     color: var(--color-primario);
 }
 
@@ -682,7 +686,9 @@ form textarea {
 .contenido-contacto h2{
     color: var(--color-primario);
 }
-
+.tecomparto{
+    margin-top: 50px;
+}
 /**FIN de  SERVICIOS***/
 
 /*****************************************/
