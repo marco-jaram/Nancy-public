@@ -579,10 +579,20 @@ form textarea {
     padding: 20px 5px;
     font-size: 16px;
     color: white;
+    display: flex;
+    justify-content: space-between;
+    
 }
 
 .contenido-footer div {
     margin: 10px;
+}
+.iconos-redes{
+    color: white;
+    font-size: 2rem;
+}
+.iconos-redes:hover{
+    color: var(--color-secundario);
 }
 
 /* testimonios */
