@@ -502,9 +502,9 @@ img {
     padding: 10px;
 }
 
-.contenedor-botones-contacto {
-    display: flex;
-    flex-direction: column;
+.contenedor-servicios{
+    max-width: 500px;
+    margin: 0 auto;
 }
 
 .contacto-main h2 {
@@ -545,6 +545,9 @@ img {
     -webkit-box-shadow: 3px 3px 20px 0px #49974f7a;
     -moz-box-shadow: 3px 3px 20px 0px #49974f7a;
     box-shadow: 3px 3px 20px 0px #5d92627a;
+    display: block;
+    width: 300px;
+    margin: 0 auto;
 }
 
 .servicios-contacto {
@@ -696,11 +699,42 @@ form textarea {
 .contenido-contacto h2{
     color: var(--color-primario);
 }
+.contenido-contacto {
+    text-align: center;
+}
 .tecomparto{
     margin-top: 50px;
 }
 /**FIN de  SERVICIOS***/
 
+/*EXITO pagina*/
+.pagina-exito {
+    height: 100vh;
+}
+
+.pagina-exito {
+    text-align: center;
+    padding-top: 150px;
+    color: var(--color-primario);
+    
+}
+
+.pagina-exito a {
+    text-decoration: none;
+    font-size: 2rem;
+    color: var(--color-primario);
+}
+
+.exito-icono {
+    font-size: 3rem;
+    color: var(--color-primario);
+}
+.header-pagina-exito{
+    background-color: var(--color-secundario);
+}
+.contacto-grid-inicio div h2{
+    color: var(--color-secundario);
+}
 /*****************************************/
 
 /*mediaquery para pantalla de lap generica*/
@@ -788,12 +822,19 @@ form textarea {
         font-size: 2.5rem;
     }
     /***SERVICIOS****/
+    .contenedor-servicios{
+        max-width: 1000px;
+       
+    }
     .servicios {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         -moz-column-gap: 2rem;
         column-gap: 2rem;
     }
+  
+  
+   
     .con-incineso {
         margin-top: 150px;
     }
@@ -823,6 +864,17 @@ form textarea {
     .tu-primera-cita {
         margin-top: 100px;
     }
+    /**Contacto**/
+    .contacto-grid-inicio {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        -moz-column-gap: 2rem;
+        column-gap: 2rem;
+       
+        color: var(--color-secundario);
+    }
+    
+   
 }
 
 /*FIN _____mediaquery para pantalla de lap generica*/
@@ -864,13 +916,5 @@ form textarea {
     /* .servicios-contacto{
         margin-top: 90px;
     } */
-    /**Contacto**/
-    .contacto-grid {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        -moz-column-gap: 2rem;
-        column-gap: 2rem;
-        margin-bottom: 100px;
-        color: var(--color-secundario);
-    }
+    
 }
