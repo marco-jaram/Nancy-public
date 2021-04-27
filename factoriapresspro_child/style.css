@@ -1,0 +1,158 @@
+/*
+Theme Name: Factoriapress pro tema hijo
+Theme URI: 
+Version: 1.0.0
+Description: Tema hijo de factoriapresspro para LA VIDA ES MEDICINA de Nancy
+Author: Marco Jaramillo
+Author URI: https://www.marco-jaram.com
+Template: factoriapresspro
+*/
+
+/*----------------- Cambios -------------------------------*/
+/*------------------------------------*\
+   PALETA DE COLOR
+\*------------------------------------*/
+:root{
+    --color1: #658f3d;
+    --color2: #b46327;
+    --color3:#EDDBCD;
+}
+/*------------------------------------*\
+   TITULOS
+\*------------------------------------*/
+.titulo-entrada h1 a {
+    color: var(--color2);
+    /* display: none; */
+}
+
+.titulo-pagina h1 {
+    color: var(--color2);
+        /* display: none; */
+}
+/*------------------------------------*\
+   HEADER
+\*------------------------------------*/
+.site-header {
+    background-image: url(./img/background-login.jpg);
+}
+.menu-desktop nav ul a{
+    color: rgb(231, 226, 226);
+}
+.menu-desktop nav ul a:hover {
+    color: var(--color1);
+}
+
+/* Quitar header de template ancho completo para incio o landingpage */
+
+
+
+.page-template-page-templatespage_total-anchura-php .site-header{
+  display: none;
+}
+
+.ham{
+    color: var(--color2);
+}
+
+/*------------------------------------*\
+  MENU DESPLEGABLE
+\*------------------------------------*/
+/* color de fondo menu desplegable  poner el mismo que el bg header*/
+.menu-item-has-children .sub-menu {
+   background-color: var(--color1);
+}
+/* poner el mismo que el anteriro. solo vale para el movil */
+.menu-movil .lista-navegacion {
+    background-color:var(--color1);
+}
+/* color de las letras de menu movil */
+.menu-movil .menux .menu-principal ul li a{
+    color: white;
+}
+/*------------------------------------*\
+   BOTON DE BUSCAR
+\*------------------------------------*/
+
+.search .search-submit{
+    margin: 0px;
+    border-color: var(--color2);
+    border-radius: 5px;
+    background-color: var(--color2);
+    color: white;
+    font-size: 14px;
+}
+
+
+.sidebar-widget h3{
+    color: var(--color1);
+}
+
+
+.site-footer{
+   background-color: #383735;
+}
+
+/*------------------------------------*\
+   ENTRADAS
+\*------------------------------------*/
+
+.categorias{
+    display: none;
+}
+
+
+.datos-publicacion{
+    display: none;
+}
+
+
+.autor-escriopor{
+display: none;
+}
+
+
+.comentarios{
+display: none;
+}
+
+
+/*------------------------------------*\
+   REDES SOCIALES
+\*------------------------------------*/
+
+.facebook-icono{
+    display: none;
+}
+
+/* .instagram-icono{
+    display: none;
+} */
+
+.twitter-icono{
+    display: none;
+}
+
+.youtube-icono{
+    display: none;
+}
+
+.whatsapp-icono{
+    display: none;
+}
+
+
+
+.redes-sociales{
+text-align: center;
+}
+
+
+/* icones colores */
+.redes-sociales ul a .iconos {
+    color: white;
+    font-size: 20px;
+}
+
+.redes-sociales ul li a i:hover {
+    color: var(--color1);
+}
